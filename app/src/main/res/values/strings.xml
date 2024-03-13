@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">guido_toolbar</string>
+    <string name="item_menu_configuracion">Configuracion</string>
+    <string name="item_menu_perfil">Ver Perfil</string>
+    <string name="item_menu_geoLocalización">Enviar mi ubicación</string>
+    <string name="item_menu_nuevacuenta">Crear Nueva Cuenta</string>
+    <string name="item_menu_Salir">Cerrar Sesion</string>
+    <string name="btn_nueva_activity">Abrir nueva ventana...</string>
+    <string name="txt_segunda_act">Esta es la segunda activity en ejecución...</string>
 </resources>

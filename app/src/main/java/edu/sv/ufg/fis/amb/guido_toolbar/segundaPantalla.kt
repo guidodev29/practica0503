@@ -1,20 +1,16 @@
 package edu.sv.ufg.fis.amb.guido_toolbar
 
-import android.annotation.SuppressLint
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 
-class MainActivity : AppCompatActivity() {
-    @SuppressLint("MissingInflatedId")
+class segundaPantalla : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_segunda_pantalla)
 
         var toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -23,11 +19,11 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.subtitle = "Universidad Francisco Gavidia"
         supportActionBar?.setIcon(R.drawable.ic_launcher_foreground)
 
-        val boton = findViewById<Button>(R.id.btn)
-        boton.setOnClickListener{
-            val intent = Intent(this,segundaPantalla::class.java)
-            startActivity(intent)
-        }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

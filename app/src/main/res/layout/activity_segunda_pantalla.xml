@@ -4,26 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".segundaPantalla">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="#DDDDDD"
+        android:background="#ffb38e"
         android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
         tools:ignore="MissingConstraints"
-        app:popupTheme="@style/MenuStyle"/>
-
-    <Button
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:popupTheme="@style/MenuStyle"
+        />
+    
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn"
-        android:backgroundTint="@color/verdeolivo"
-        android:text="@string/btn_nueva_activity"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/txt_segunda_act"
+        android:layout_below="@+id/toolbar"
+        android:textColor="@color/rojopassion"
+        android:layout_marginLeft="25dp"/>
 
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
